@@ -6,14 +6,14 @@ const App = () => {
   useEffect(() => {
     fetch('https://randomuser.me/api/?page=1&results=1&seed=abc')
       .then((res) => res.json())
-      .then((data) => setUser(data.results[0])); // Accessing the first user object from the array
+      .then((data) => setUser(data.results[0]));
   }, []);
 
   return (
     <div className="flex justify-center items-center mt-28">
       <div className="card w-96 bg-gray-200 text-gray-600 shadow-xl">
         <figure className="px-10 pt-10">
-          <img src={user.picture.large} className="rounded-xl" />
+          <img src={user?.picture?.large} className="rounded-xl" />
         </figure>
         <div className="card-body text-left">
           <h2 className="card-title">{`${user.name?.title} ${user.name?.first} ${user.name?.last}`}</h2>
