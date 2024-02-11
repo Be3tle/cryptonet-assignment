@@ -4,7 +4,7 @@ const App = () => {
   useEffect;
   return (
     <div className="flex justify-center items-center mt-60">
-      <div className="card w-[580px] card-side bg-base-100 shadow-xl">
+      <div className="card w-[580px] card-side bg-gray-200 text-black shadow-xl">
         <figure>
           <img
             className="p-5"
