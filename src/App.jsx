@@ -1,7 +1,13 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const App = () => {
-  useEffect;
+  const [user, setUser] = useState([]);
+  console.log(user);
+  useEffect(() => {
+    fetch('https://randomuser.me/api/?page=1&results=1&seed=abc')
+      .then((res) => res.json())
+      .then((data) => setUser(data));
+  }, []);
   return (
     <div className="flex justify-center items-center mt-60">
       <div className="card w-[580px] card-side bg-gray-200 text-black shadow-xl">
