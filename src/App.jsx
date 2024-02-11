@@ -14,9 +14,8 @@ const App = () => {
       <div className="card w-[580px] card-side bg-gray-200 text-black shadow-xl">
         <figure>
           <img
-            className="p-5"
+            className="p-5 rounded-full"
             src={user.picture ? user.picture.large : ''}
-            alt="User"
           />
         </figure>
         <div className="card-body">
