@@ -10,20 +10,12 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center mt-60">
+    <div className="flex justify-center items-center mt-28">
       <div className="card w-96 bg-gray-200 text-gray-600 shadow-xl">
         <figure className="px-10 pt-10">
-          <img
-            src={
-              user.picture
-                ? user.picture.large
-                : 'https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg'
-            }
-            alt="User"
-            className="rounded-xl"
-          />
+          <img src={user.picture.large} className="rounded-xl" />
         </figure>
-        <div className="card-body items-center text-center">
+        <div className="card-body text-left">
           <h2 className="card-title">{`${user.name?.title} ${user.name?.first} ${user.name?.last}`}</h2>
           <p>Gender: {user.gender}</p>
           <p>
