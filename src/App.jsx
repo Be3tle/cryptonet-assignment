@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <div className="flex justify-center items-center mt-28">
-      <div className="card w-96 bg-gray-200 text-gray-600 shadow-xl">
+      <div className="card w-96 bg-gray-800 text-gray-300 shadow-2xl">
         <figure className="px-10 pt-10">
           <img src={user?.picture?.large} className="rounded-xl" />
         </figure>
